@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            android:transitionName="book_image" />
+
+        <TextView
+
+            android:id="@+id/book_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/book_image"
+            android:fontFamily="@font/opensans_regular"
+            android:singleLine="true"
+            android:text="AED"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/book_price_crn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/book_price"
+            android:fontFamily="@font/opensans_semibold"
+            android:singleLine="true"
+            android:text="15"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_price"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/book_image"
+            android:fontFamily="@font/opensans_regular"
+            android:singleLine="true"
+            android:text="Notebook"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/book_created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/book_image"
+            android:fontFamily="@font/helvetica"
+            android:singleLine="true"
+            android:text="27-July-2021"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
